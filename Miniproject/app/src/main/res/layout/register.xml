@@ -1,0 +1,154 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_name"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_email1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_name1">
+
+            <EditText
+                android:id="@+id/Email1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_email1">
+
+            <EditText
+                android:id="@+id/Password1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_password1">
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_addr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_password2">
+
+            <EditText
+                android:id="@+id/Addr1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/addr1"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_addr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_addr1">
+
+            <EditText
+                android:id="@+id/Addr2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/addr2"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_addr4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_addr2">
+
+            <EditText
+                android:id="@+id/Addr4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/addr4"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <CheckBox
+            android:layout_marginTop="20dp"
+            android:id="@+id/Check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="61dp"
+            android:layout_marginStart="61dp"
+            android:checked="false"
+            android:text="Donor"
+            android:textSize="20dp"
+            android:layout_below="@+id/input_layout_addr4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_marginTop="20dp"
+            android:id="@+id/Check4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:checked="false"
+            android:text="Receiver"
+            android:textSize="20dp"
+            android:layout_below="@+id/input_layout_addr4"
+            android:layout_toRightOf="@+id/Check3"
+            android:layout_toEndOf="@+id/Check3" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary"
+            android:text="@string/sign_up"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="50dp"/>
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
